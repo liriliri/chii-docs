@@ -1,0 +1,29 @@
+{
+  "name": "chii-docs",
+  "version": "0.1.0",
+  "description": "Documentation for Chii and Chobitsu",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs",
+    "format": "lsla prettier \"*.json\" \"docs/**/*.{mts,js,vue,css}\" --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liriliri/chii-docs.git"
+  },
+  "keywords": [
+    "chii"
+  ],
+  "author": "surunzi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liriliri/chii-docs/issues"
+  },
+  "homepage": "https://github.com/liriliri/chii-docs#readme",
+  "devDependencies": {
+    "licia": "^1.39.2",
+    "vitepress": "^1.2.3"
+  }
+}

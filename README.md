@@ -1,2 +1,6 @@
-# chii-docs
-Documentation for Chii and Chobitsu 
+# chii.liriliri.io
+
+```bash
+npm i
+npm run dev
+```
