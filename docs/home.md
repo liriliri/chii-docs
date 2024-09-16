@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: false
 title: Chii - Remote debugging tool
 ---
 
 <script setup>
-import Chii from '@theme/components/Chii.vue'
+import Home from '@theme/components/Home.vue'
 </script>
 
-<Chii />
+<Home />

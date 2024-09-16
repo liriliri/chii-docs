@@ -5,6 +5,11 @@ export default defineConfig({
   description: "Documentation for Chii and Chobitsu",
   outDir: "../dist",
   themeConfig: {
+    logo: {
+      src: "/logo.png",
+      width: 48,
+      height: 48,
+    },
     socialLinks: [
       {
         icon: {
