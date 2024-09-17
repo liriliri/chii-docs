@@ -71,7 +71,8 @@ onMounted(() => {
         </p>
       </div>
       <div class="slogan-desc">
-        Debug remotely and easily with chrome devtool.
+        Debug remotely with chrome devtools && Embed chrome devtools in web
+        pages.
       </div>
     </div>
   </div>
@@ -107,8 +108,11 @@ onMounted(() => {
 }
 .slogan-desc {
   padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
   font-size: 24px;
   color: var(--vp-c-text-2);
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
