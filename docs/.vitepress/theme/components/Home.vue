@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 import LunaShaderToyPlayer from "luna-shader-toy-player/vue";
 
 // https://www.shadertoy.com/view/XXyGzh
@@ -35,6 +35,19 @@ const renderPass = ref([
     type: "image",
   },
 ]);
+
+onMounted(() => {
+  if (window.parent && window.parent.loadChii) {
+    window.injectTarget = function (targetSrc) {
+      var script = document.createElement("script");
+      script.src = targetSrc;
+      script.setAttribute("embedded", "true");
+      script.setAttribute("cdn", "https://cdn.jsdelivr.net/npm/chii/public");
+      document.head.appendChild(script);
+    };
+    window.parent.loadChii();
+  }
+});
 </script>
 
 <template>
