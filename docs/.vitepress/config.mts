@@ -10,6 +10,10 @@ export default defineConfig({
       width: 48,
       height: 48,
     },
+    nav: [
+      { text: "Docs", link: "/docs" },
+      { text: "Playground", link: "/room" },
+    ],
     socialLinks: [
       {
         icon: {
@@ -22,5 +26,22 @@ export default defineConfig({
         link: "https://github.com/liriliri/chii",
       },
     ],
+  },
+  locales: {
+    root: {
+      label: "English",
+      lang: "en",
+    },
+    zh: {
+      label: "中文",
+      lang: "zh",
+      themeConfig: {
+        outlineTitle: "在这一页上",
+        nav: [
+          { text: "文档", link: "/zh/docs" },
+          { text: "演示", link: "/zh/room" },
+        ],
+      },
+    },
   },
 });
