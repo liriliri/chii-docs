@@ -51,15 +51,72 @@ onMounted(() => {
 </script>
 
 <template>
-  <luna-shader-toy-player
-    :controls="false"
-    :renderPass="renderPass"
-    :style="{
-      position: 'absolute',
-      left: 0,
-      top: 0,
-      width: '100%',
-      height: '600px',
-    }"
-  />
+  <div class="banner">
+    <luna-shader-toy-player
+      :controls="false"
+      :renderPass="renderPass"
+      :style="{
+        position: 'absolute',
+        left: 0,
+        top: 0,
+        width: '100%',
+        height: '100%',
+      }"
+    />
+    <div class="slogan-container">
+      <div class="slogan">
+        <p>
+          Chii<br />
+          Remote Debugging Tool
+        </p>
+      </div>
+      <div class="slogan-desc">
+        Debug remotely and easily with chrome devtool.
+      </div>
+    </div>
+  </div>
 </template>
+
+<style scoped>
+.banner {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.slogan-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: var(--vp-font-family-base);
+  text-shadow: 0 0 2px var(--vp-c-bg), 0 0 5px var(--vp-c-bg),
+    0 0 10px var(--vp-c-bg);
+}
+.slogan {
+  font-size: 56px;
+  line-height: 1.2em;
+  text-align: center;
+  font-weight: 700;
+}
+.slogan-desc {
+  padding-top: 30px;
+  font-size: 24px;
+  color: var(--vp-c-text-2);
+}
+
+@media screen and (max-width: 768px) {
+  .slogan {
+    font-size: 32px;
+  }
+  .slogan-desc {
+    font-size: 16px;
+  }
+}
+</style>

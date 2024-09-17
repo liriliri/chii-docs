@@ -56,4 +56,8 @@ onBeforeUnmount(() => {
   width: 100%;
   border: none;
 }
+
+#devtools {
+  border-top: 1px solid #d3e3fd;
+}
 </style>
