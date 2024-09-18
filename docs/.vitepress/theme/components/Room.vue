@@ -1,5 +1,5 @@
 <template>
-  <iframe id="playground" src="https://chii.liriliri.io"></iframe>
+  <iframe id="playground" src="https://chii.liriliri.io/playground/"></iframe>
 </template>
 
 <style>
