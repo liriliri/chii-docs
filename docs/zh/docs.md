@@ -6,14 +6,14 @@
 
 ![Demo](/qrcode.png)
 
-请扫描二维码或在手机上直接访问：[https://chii.liriliri.io/test/demo.html](https://chii.liriliri.io/test/demo.html)
+请扫描二维码或在手机上直接访问：[https://chii.liriliri.io/playground/test/demo.html](https://chii.liriliri.io/playground/test/demo.html)
 
-打开 [https://chii.liriliri.io/](https://chii.liriliri.io/) 并点击 inspect 按钮开始调试示例页面。
+打开 [https://chii.liriliri.io/playground/](https://chii.liriliri.io/playground/) 并点击 inspect 按钮开始调试示例页面。
 
 如果想在其它页面尝试，请在浏览器地址栏上输入以下代码。
 
 ```javascript
-javascript:(function () { var script = document.createElement('script'); script.src="//chii.liriliri.io/target.js"; document.body.appendChild(script); })();
+javascript:(function () { var script = document.createElement('script'); script.src="//chii.liriliri.io/playground/target.js"; document.body.appendChild(script); })();
 ```
 
 ## 安装
@@ -47,7 +47,7 @@ chii start -p 8080
 <script src="//host-machine-ip:8080/target.js" embedded="true"></script>
 ```
 
-访问 [https://chii.liriliri.io/test/demo.html?embedded=true](https://chii.liriliri.io/test/demo.html?embedded=true) 可以查看实际效果。
+访问 [https://chii.liriliri.io/playground/test/demo.html?embedded=true](https://chii.liriliri.io/playground/test/demo.html?embedded=true) 可以查看实际效果。
 
 ## 相关项目
 

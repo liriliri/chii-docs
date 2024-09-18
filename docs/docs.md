@@ -6,14 +6,14 @@ Remote debugging tool like [weinre](https://people.apache.org/~pmuellr/weinre/do
 
 ![Demo](/qrcode.png)
 
-Browse it on your phone: [https://chii.liriliri.io/test/demo.html](https://chii.liriliri.io/test/demo.html)
+Browse it on your phone: [https://chii.liriliri.io/playground/test/demo.html](https://chii.liriliri.io/playground/test/demo.html)
 
-Open [https://chii.liriliri.io/](https://chii.liriliri.io/) and click inspect to start debugging the demo page.
+Open [https://chii.liriliri.io/playground/](https://chii.liriliri.io/playground/) and click inspect to start debugging the demo page.
 
 In order to try it for different sites, execute the script below on browser address bar.
 
 ```javascript
-javascript:(function () { var script = document.createElement('script'); script.src="//chii.liriliri.io/target.js"; document.body.appendChild(script); })();
+javascript:(function () { var script = document.createElement('script'); script.src="//chii.liriliri.io/playground/target.js"; document.body.appendChild(script); })();
 ```
 
 ## Install
@@ -46,7 +46,7 @@ It's also possible to embed devtools in the same page using iframe. All you have
 <script src="//host-machine-ip:8080/target.js" embedded="true"></script>
 ```
 
-Visit [Embedded Iframe](https://chii.liriliri.io/test/demo.html?embedded=true) or [Separate Iframe](https://chii.liriliri.io/test/iframe.html) to see how it works.
+Visit [Embedded Iframe](https://chii.liriliri.io/playground/test/demo.html?embedded=true) or [Separate Iframe](https://chii.liriliri.io/playground/test/iframe.html) to see how it works.
 
 ## Related Projects
 
