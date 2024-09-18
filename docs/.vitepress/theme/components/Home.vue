@@ -1,6 +1,16 @@
 <script setup>
 import { ref, onMounted } from "vue";
-import LunaShaderToyPlayer from "luna-shader-toy-player/vue";
+import { defineClientComponent } from "vitepress";
+
+const lunaShaderToyPlayerRef = ref(null);
+const LunaShaderToyPlayer = defineClientComponent(
+  () => import("luna-shader-toy-player/vue"),
+  [
+    {
+      ref: lunaShaderToyPlayerRef,
+    },
+  ]
+);
 
 // https://www.shadertoy.com/view/XXyGzh
 const code = `void mainImage( out vec4 o, vec2 u ) {

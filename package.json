@@ -24,7 +24,7 @@
   "homepage": "https://github.com/liriliri/chii-docs#readme",
   "devDependencies": {
     "licia": "^1.39.2",
-    "luna-shader-toy-player": "^0.2.0",
+    "luna-shader-toy-player": "^0.5.0",
     "vitepress": "^1.2.3"
   }
 }
