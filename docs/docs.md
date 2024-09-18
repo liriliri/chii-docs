@@ -1,10 +1,10 @@
-<img src="https://res.liriliri.io/chii/screenshot.jpg" style="width:100%">
+<img src="/screenshot.jpg" style="width:100%">
 
 Remote debugging tool like [weinre](https://people.apache.org/~pmuellr/weinre/docs/latest/Home.html), replacing web inspector with the latest [chrome devtools frontend](https://github.com/ChromeDevTools/devtools-frontend).
 
 ## Demo
 
-![Demo](https://res.liriliri.io/chii/qrcode.png)
+![Demo](/qrcode.png)
 
 Browse it on your phone: [https://chii.liriliri.io/test/demo.html](https://chii.liriliri.io/test/demo.html)
 

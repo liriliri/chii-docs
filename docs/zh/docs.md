@@ -1,10 +1,10 @@
-<img src="https://res.liriliri.io/chii/screenshot.jpg" style="width:100%">
+<img src="/screenshot.jpg" style="width:100%">
 
 与 [weinre](https://people.apache.org/~pmuellr/weinre/docs/latest/Home.html) 一样的远程调试工具，主要是将 web inspector 替换为最新的 [chrome devtools frontend](https://github.com/ChromeDevTools/devtools-frontend).
 
 ## Demo
 
-![Demo](https://res.liriliri.io/chii/qrcode.png)
+![Demo](/qrcode.png)
 
 请扫描二维码或在手机上直接访问：[https://chii.liriliri.io/test/demo.html](https://chii.liriliri.io/test/demo.html)
 
