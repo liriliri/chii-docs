@@ -1,5 +1,7 @@
 node_modules/
 docs/.vitepress/cache/
 docs/.vitepress/.temp/
+docs/public/target.js
+docs/public/front_end/
 dist/
 package-lock.json

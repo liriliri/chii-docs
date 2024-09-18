@@ -4,6 +4,7 @@ export default defineConfig({
   title: "Chii",
   description: "Documentation for Chii and Chobitsu",
   outDir: "../dist",
+  srcExclude: ["**/public/**"],
   themeConfig: {
     logo: {
       src: "/logo.png",

@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "vitepress dev docs",
+    "init": "lsla shx cp node_modules/chii/public/target.js docs/public/target.js && lsla shx cp -r node_modules/chii/public/front_end docs/public/front_end",
     "build": "vitepress build docs",
     "preview": "vitepress preview docs",
     "format": "lsla prettier \"*.json\" \"docs/**/*.{mts,js,vue,css}\" --write"
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/liriliri/chii-docs#readme",
   "devDependencies": {
+    "chii": "^1.13.0",
     "licia": "^1.39.2",
     "luna-shader-toy-player": "^0.5.0",
     "vitepress": "^1.2.3"

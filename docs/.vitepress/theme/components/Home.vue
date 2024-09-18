@@ -52,7 +52,7 @@ onMounted(() => {
       var script = document.createElement("script");
       script.src = targetSrc;
       script.setAttribute("embedded", "true");
-      script.setAttribute("cdn", "https://unpkg.com/chii/public");
+      // script.setAttribute("cdn", "https://unpkg.com/chii/public");
       document.head.appendChild(script);
     };
     window.parent.loadChii();

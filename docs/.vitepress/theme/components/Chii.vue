@@ -20,7 +20,7 @@ onMounted(() => {
   resetHeight();
   window.addEventListener("resize", resetHeight);
 
-  const targetSrc = "https://unpkg.com/chii/public/target.js";
+  const targetSrc = "/target.js";
   window.loadChii = () => {
     targetIframe.value.contentWindow.ChiiDevtoolsIframe = devtoolsIframe.value;
     targetIframe.value.contentWindow.injectTarget(targetSrc);
