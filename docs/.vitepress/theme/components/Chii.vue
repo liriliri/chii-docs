@@ -1,38 +1,38 @@
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from "vue";
+import { ref, onMounted, onBeforeUnmount } from 'vue'
 
-const targetHeight = ref(0);
-const devtoolsHeight = ref(0);
-const targetIframe = ref(null);
-const devtoolsIframe = ref(null);
+const targetHeight = ref(0)
+const devtoolsHeight = ref(0)
+const targetIframe = ref(null)
+const devtoolsIframe = ref(null)
 
 function resetHeight() {
-  const totalHeight = window.innerHeight - 64;
-  targetHeight.value = totalHeight / 2;
-  devtoolsHeight.value = totalHeight - targetHeight.value;
+  const totalHeight = window.innerHeight - 64
+  targetHeight.value = totalHeight / 2
+  devtoolsHeight.value = totalHeight - targetHeight.value
 }
 
 function sendToTarget(event) {
-  targetIframe.value.contentWindow.postMessage(event.data, event.origin);
+  targetIframe.value.contentWindow.postMessage(event.data, event.origin)
 }
 
 onMounted(() => {
-  resetHeight();
-  window.addEventListener("resize", resetHeight);
+  resetHeight()
+  window.addEventListener('resize', resetHeight)
 
-  const targetSrc = "/target.js";
+  const targetSrc = '/target.js'
   window.loadChii = () => {
-    targetIframe.value.contentWindow.ChiiDevtoolsIframe = devtoolsIframe.value;
-    targetIframe.value.contentWindow.injectTarget(targetSrc);
-  };
-  window.addEventListener("message", sendToTarget);
-});
+    targetIframe.value.contentWindow.ChiiDevtoolsIframe = devtoolsIframe.value
+    targetIframe.value.contentWindow.injectTarget(targetSrc)
+  }
+  window.addEventListener('message', sendToTarget)
+})
 
 onBeforeUnmount(() => {
-  window.removeEventListener("resize", resetHeight);
-  window.loadChii = null;
-  window.removeEventListener("message", sendToTarget);
-});
+  window.removeEventListener('resize', resetHeight)
+  window.loadChii = null
+  window.removeEventListener('message', sendToTarget)
+})
 </script>
 
 <template>

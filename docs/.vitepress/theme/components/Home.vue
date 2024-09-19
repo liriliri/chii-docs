@@ -1,16 +1,16 @@
 <script setup>
-import { ref, onMounted } from "vue";
-import { defineClientComponent } from "vitepress";
+import { ref, onMounted } from 'vue'
+import { defineClientComponent } from 'vitepress'
 
-const lunaShaderToyPlayerRef = ref(null);
+const lunaShaderToyPlayerRef = ref(null)
 const LunaShaderToyPlayer = defineClientComponent(
-  () => import("luna-shader-toy-player/vue"),
+  () => import('luna-shader-toy-player/vue'),
   [
     {
       ref: lunaShaderToyPlayerRef,
     },
   ]
-);
+)
 
 // https://www.shadertoy.com/view/XXyGzh
 const code = `void mainImage( out vec4 o, vec2 u ) {
@@ -33,30 +33,30 @@ const code = `void mainImage( out vec4 o, vec2 u ) {
               
      o = 25.6 / (min(o, 13.) + 164. / o) 
        - dot(u, u) / 250.;
-}`;
+}`
 
 const renderPass = ref([
   {
     inputs: [],
     outputs: [],
     code,
-    name: "Image",
-    description: "",
-    type: "image",
+    name: 'Image',
+    description: '',
+    type: 'image',
   },
-]);
+])
 
 onMounted(() => {
   if (window.parent && window.parent.loadChii) {
     window.injectTarget = function (targetSrc) {
-      var script = document.createElement("script");
-      script.src = targetSrc;
-      script.setAttribute("embedded", "true");
-      document.head.appendChild(script);
-    };
-    window.parent.loadChii();
+      var script = document.createElement('script')
+      script.src = targetSrc
+      script.setAttribute('embedded', 'true')
+      document.head.appendChild(script)
+    }
+    window.parent.loadChii()
   }
-});
+})
 </script>
 
 <template>
