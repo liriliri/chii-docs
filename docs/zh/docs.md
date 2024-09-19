@@ -8,7 +8,7 @@
 
 请扫描二维码或在手机上直接访问：[https://chii.liriliri.io/playground/test/demo.html](https://chii.liriliri.io/playground/test/demo.html)
 
-打开 [https://chii.liriliri.io/playground/](https://chii.liriliri.io/playground/) 并点击 inspect 按钮开始调试示例页面。
+打开 [https://chii.liriliri.io/playground/](/zh/room.md) 并点击 inspect 按钮开始调试示例页面。
 
 如果想在其它页面尝试，请在浏览器地址栏上输入以下代码。
 
