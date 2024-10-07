@@ -1,4 +1,6 @@
-<img src="/screenshot.jpg" style="width:100%">
+# Introduction
+
+![screenshot](/screenshot.jpg)
 
 Remote debugging tool like [weinre](https://people.apache.org/~pmuellr/weinre/docs/latest/Home.html), replacing web inspector with the latest [chrome devtools frontend](https://github.com/ChromeDevTools/devtools-frontend).
 

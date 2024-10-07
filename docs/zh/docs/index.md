@@ -1,4 +1,6 @@
-<img src="/screenshot.jpg" style="width:100%">
+# 简介
+
+![screenshot](/screenshot.jpg)
 
 与 [weinre](https://people.apache.org/~pmuellr/weinre/docs/latest/Home.html) 一样的远程调试工具，主要是将 web inspector 替换为最新的 [chrome devtools frontend](https://github.com/ChromeDevTools/devtools-frontend).
 
