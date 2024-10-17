@@ -25,8 +25,8 @@
   "homepage": "https://github.com/liriliri/chii-docs#readme",
   "devDependencies": {
     "@types/node": "^22.7.4",
-    "chii": "^1.13.0",
-    "licia": "^1.39.2",
+    "chii": "^1.15.2",
+    "licia": "^1.43.0",
     "luna-shader-toy-player": "^0.5.0",
     "vitepress": "^1.2.3"
   }
