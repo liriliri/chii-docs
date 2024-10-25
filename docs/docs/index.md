@@ -49,9 +49,3 @@ It's also possible to embed devtools in the same page using iframe. All you have
 ```
 
 Visit [Embedded Iframe](https://chii.liriliri.io/playground/test/demo.html?embedded=true) or [Separate Iframe](https://chii.liriliri.io/playground/test/iframe.html) to see how it works.
-
-## Related Projects
-
-* [whistle.chii](https://github.com/liriliri/whistle.chii): Whistle Chii plugin.
-* [chobitsu](https://github.com/liriliri/chobitsu): Chrome devtools protocol JavaScript implementation.
-* [vivy](https://github.com/liriliri/vivy-docs): Icon image generation.

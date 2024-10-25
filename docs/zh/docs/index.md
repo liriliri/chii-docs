@@ -50,9 +50,3 @@ chii start -p 8080
 ```
 
 访问 [https://chii.liriliri.io/playground/test/demo.html?embedded=true](https://chii.liriliri.io/playground/test/demo.html?embedded=true) 可以查看实际效果。
-
-## 相关项目
-
-* [whistle.chii](https://github.com/liriliri/whistle.chii)：Whistle Chii 插件。
-* [chobitsu](https://github.com/liriliri/chobitsu): Chrome 调试协议 JavaScript 实现。
-* [vivy](https://github.com/liriliri/vivy-docs): 图标生成。

@@ -27,6 +27,10 @@ export default defineConfig({
           text: 'Chobitsu API',
           link: '/docs/chobitsu',
         },
+        {
+          text: 'Contributing Guide',
+          link: '/docs/contributing',
+        },
       ],
     },
     socialLinks: [
