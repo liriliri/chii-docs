@@ -1,6 +1,8 @@
 <script setup>
 import { ref, onMounted } from 'vue'
-import { defineClientComponent } from 'vitepress'
+import { defineClientComponent, useData } from 'vitepress'
+
+const t = (en, zh) => (useData().lang.value === 'zh' ? zh : en)
 
 const lunaShaderToyPlayerRef = ref(null)
 const LunaShaderToyPlayer = defineClientComponent(
@@ -76,12 +78,16 @@ onMounted(() => {
       <div class="slogan">
         <p>
           Chii<br />
-          Remote Debugging Tool
+          {{ t('Remote Debugging Tool', '远程调试工具') }}
         </p>
       </div>
       <div class="slogan-desc">
-        Debug remotely with chrome devtools && Embed chrome devtools in web
-        pages.
+        {{
+          t(
+            'Debug remotely with chrome devtools && Embed chrome devtools in web pages',
+            '使用 chrome 调试器远程调试 && 内嵌 chrome 调试器到页面中'
+          )
+        }}
       </div>
     </div>
   </div>

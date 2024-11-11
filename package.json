@@ -27,7 +27,7 @@
     "@types/node": "^22.7.4",
     "chii": "^1.15.2",
     "licia": "^1.43.0",
-    "luna-shader-toy-player": "^0.5.0",
-    "vitepress": "^1.2.3"
+    "luna-shader-toy-player": "^0.5.1",
+    "vitepress": "^1.5.0"
   }
 }

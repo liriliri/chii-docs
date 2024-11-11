@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Chii - Remote debugging tool
+title: Chii - 远程调试工具
 ---
 
 <script setup>

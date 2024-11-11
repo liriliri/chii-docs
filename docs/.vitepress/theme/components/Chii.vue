@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { useData } from 'vitepress'
 
 const targetHeight = ref(0)
 const devtoolsHeight = ref(0)
@@ -38,7 +39,7 @@ onBeforeUnmount(() => {
 <template>
   <iframe
     id="home"
-    src="/home.html"
+    :src="useData().lang.value === 'zh' ? '/zh/home.html' : '/home.html'"
     scrolling="no"
     ref="targetIframe"
     :style="{ height: targetHeight + 'px' }"
