@@ -28,6 +28,7 @@
     "chii": "^1.15.2",
     "licia": "^1.43.0",
     "luna-shader-toy-player": "^0.5.1",
+    "luna-split-pane": "^0.4.1",
     "vitepress": "^1.5.0"
   }
 }

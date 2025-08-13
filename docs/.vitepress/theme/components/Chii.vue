@@ -1,16 +1,14 @@
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { ref, onMounted, onBeforeUnmount, computed } from 'vue'
 import { useData } from 'vitepress'
+import LunaSplitPane, { LunaSplitPaneItem } from 'luna-split-pane/vue'
 
-const targetHeight = ref(0)
-const devtoolsHeight = ref(0)
+const totalHeight = ref(0)
 const targetIframe = ref(null)
 const devtoolsIframe = ref(null)
 
 function resetHeight() {
-  const totalHeight = window.innerHeight - 64
-  targetHeight.value = totalHeight / 2
-  devtoolsHeight.value = totalHeight - targetHeight.value
+  totalHeight.value = window.innerHeight - 64
 }
 
 function sendToTarget(event) {
@@ -34,21 +32,30 @@ onBeforeUnmount(() => {
   window.loadChii = null
   window.removeEventListener('message', sendToTarget)
 })
+
+const isDark = useData().isDark
+const theme = computed(() => (isDark.value ? 'dark' : 'light'))
 </script>
 
 <template>
-  <iframe
-    id="home"
-    :src="useData().lang.value === 'zh' ? '/zh/home.html' : '/home.html'"
-    scrolling="no"
-    ref="targetIframe"
-    :style="{ height: targetHeight + 'px' }"
-  ></iframe>
-  <iframe
-    id="devtools"
-    ref="devtoolsIframe"
-    :style="{ height: devtoolsHeight + 'px' }"
-  ></iframe>
+  <luna-split-pane
+    :style="{ height: totalHeight + 'px' }"
+    direction="vertical"
+    :theme="theme"
+  >
+    <luna-split-pane-item :weight="50" :min-size="100">
+      <iframe
+        id="home"
+        :src="useData().lang.value === 'zh' ? '/zh/home.html' : '/home.html'"
+        scrolling="no"
+        ref="targetIframe"
+        style="height: 100%"
+      ></iframe>
+    </luna-split-pane-item>
+    <luna-split-pane-item :weight="50" :min-size="100">
+      <iframe id="devtools" ref="devtoolsIframe" style="height: 100%"></iframe>
+    </luna-split-pane-item>
+  </luna-split-pane>
 </template>
 
 <style>
@@ -59,6 +66,6 @@ onBeforeUnmount(() => {
 }
 
 #devtools {
-  border-top: 1px solid #d3e3fd;
+  border-top: 1px solid var(--vp-c-divider);
 }
 </style>
