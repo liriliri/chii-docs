@@ -98,4 +98,9 @@ export default defineConfig({
       gtag('config', 'G-1BL0KS0FSD');`,
     ],
   ],
+  vite: {
+    ssr: {
+      noExternal: ['luna-split-pane'],
+    }
+  }
 })
