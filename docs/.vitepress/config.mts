@@ -18,8 +18,8 @@ export default defineConfig({
       height: 48,
     },
     nav: [
-      { text: 'Docs', link: '/docs' },
-      { text: 'Playground', link: '/room' },
+      { text: 'Docs', link: '/docs/' },
+      { text: 'Playground', link: '/room/' },
     ],
     sidebar: {
       '/docs/': [
@@ -67,8 +67,8 @@ export default defineConfig({
       themeConfig: {
         outlineTitle: '在这一页上',
         nav: [
-          { text: '文档', link: '/zh/docs' },
-          { text: '演示', link: '/zh/room' },
+          { text: '文档', link: '/zh/docs/' },
+          { text: '演示', link: '/zh/room/' },
         ],
         sidebar: {
           '/zh/docs/': [
