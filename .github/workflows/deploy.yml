@@ -24,13 +24,13 @@ jobs:
         npm i
         npm run init
         npm run build
-        mkdir -p ../../page/chii-docs
-        cp -r dist/* ../../page/chii-docs
+        mkdir -p ../../liriliri/chii
+        cp -r dist/* ../../liriliri/chii
     - uses: appleboy/scp-action@master
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
-        source: "page/chii-docs/"
-        target: "/root/"    
+        source: "liriliri/chii/"
+        target: "/var/www/"    
     
